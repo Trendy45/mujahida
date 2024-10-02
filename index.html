@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameen Mujahid - Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.8;
+            background-color: #cce7ff;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+        }
+
+        header {
+            background: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            border-bottom: 1px solid #333;
+            max-width: 1200px; /* Limits the section width to avoid overflow */
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #003366;
+            color: #fff;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        input,
+        textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #555;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #003366;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            max-width: 1200px; /* Limit the width */
+            overflow-x: auto; /* Allow scrolling if necessary */
+        }
+
+        .services-table th,
+        .services-table td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pay-button {
+            background-color: #003366;
+            color: #fff;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .pay-button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Ameen Mujahid</h1>
+        <p>Certified Professional from Africa | Empowering Careers and Business Growth.</p>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Ameen Mujahid, a Certified Career Development and Business Growth Specialist from Africa dedicated to empowering professionals and organizations to unlock their full potential. My mission is to guide individuals and businesses in achieving their aspirations and realizing their goals. With a strong focus on collaboration, I work closely with clients to understand their unique needs and provide tailored solutions that drive growth and success. Passionate about continuous improvement, I stay informed on industry trends to deliver innovative strategies that help my clients thrive in an ever-evolving landscape. Let’s connect to explore how I can assist you in reaching your goals and advancing your business.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Resume Writing:</strong> Tailored resumes highlighting your qualifications.</li>
+            <li><strong>Cover Letter Writing:</strong> Persuasive letters for job applications.</li>
+            <li><strong>LinkedIn Profile Optimization:</strong> Enhancing profiles to attract recruiters.</li>
+            <li><strong>SEO Content Writing:</strong> SEO-friendly content for better rankings.</li>
+            <li><strong>Website Content Optimization:</strong> Improved content for user engagement.</li>
+            <li><strong>Business Plan Writing:</strong> Comprehensive plans for startups.</li>
+            <li><strong>Press Release Writing:</strong> Compelling announcements for news.</li>
+            <li><strong>Social Media Management:</strong> Boosting engagement on social platforms.</li>
+            <li><strong>Email Marketing Campaigns:</strong> Effective email campaign design.</li>
+            <li><strong>Graphic Design:</strong> Visually appealing marketing graphics.</li>
+            <li><strong>Video Editing:</strong> Editing for promotional videos.</li>
+            <li><strong>Content Strategy Development:</strong> Roadmap for content creation.</li>
+            <li><strong>Market Research:</strong> Research to inform strategies.</li>
+            <li><strong>Branding Services:</strong> Developing brand identities.</li>
+            <li><strong>Influencer Marketing:</strong> Connecting brands with influencers.</li>
+            <li><strong>Social Media Advertising:</strong> Targeted social media ads.</li>
+            <li><strong>Data Analysis:</strong> Analyzing data for insights.</li>
+            <li><strong>Website Development:</strong> Building user-friendly websites.</li>
+            <li><strong>Online Course Development:</strong> Creating engaging online courses.</li>
+            <li><strong>Podcast Editing:</strong> Polished audio editing for podcasts.</li>
+            <li><strong>Secure Your Dream Job:</strong> Support to land your ideal position.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>I have successfully worked with numerous clients across different freelancing platforms, delivering tailored solutions and earning a reputation for excellence:</p>
+        <ul>
+            <li><strong>Freelancer.com:</strong> High-quality content, SEO, and digital marketing solutions.</li>
+            <li><strong>Upwork:</strong> Long-term clients in resume writing and content creation.</li>
+            <li><strong>Truelancer:</strong> Graphic design and paid advertising services.</li>
+            <li><strong>Fiverr:</strong> 5-star-rated services in resume writing and video editing.</li>
+            <li>Collaborated with Abdelrahman Ali on his website <a href="http://abdelrahmanali.site" target="_blank">AbdelrahmanAli.site</a>, optimizing SEO and enhancing user experience.</li>
+            <li><strong>Kwork:</strong> Designed a professional website for Alixacare.</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Services I Offer</h2>
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Order Now</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Resume Writing</strong></td>
+                    <td>Craft a compelling ATS resume.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Cover Letter Writing</strong></td>
+                    <td>Persuasive letters for job applications.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>LinkedIn Profile Optimization</strong></td>
+                    <td>Enhance your profile to attract recruiters.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>SEO Content Writing</strong></td>
+                    <td>SEO-friendly content for better rankings.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Social Media Management</strong></td>
+                    <td>Manage accounts to boost engagement.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Email Marketing Campaigns</strong></td>
+                    <td>Design effective email campaigns.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Website Content Optimization</strong></td>
+                    <td>Improve content for user engagement.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Graphic Design</strong></td>
+                    <td>Create appealing marketing graphics.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Video Editing</strong></td>
+                    <td>Edit videos for promotions.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Content Strategy Development</strong></td>
+                    <td>Roadmap for content creation.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Market Research</strong></td>
+                    <td>Research to inform strategies.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Branding Services</strong></td>
+                    <td>Develop brand identity.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Online Course Development</strong></td>
+                    <td>Create engaging online courses.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Podcast Editing</strong></td>
+                    <td>Edit audio for polished podcasts.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Plan Writing</strong></td>
+                    <td>Craft comprehensive business plans.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Press Release Writing</strong></td>
+                    <td>Write compelling press releases.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Influencer Marketing</strong></td>
+                    <td>Connect brands with influencers.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Website Development</strong></td>
+                    <td>Build user-friendly websites.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Data Analysis</strong></td>
+                    <td>Analyze data for insights.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Social Media Advertising</strong></td>
+                    <td>Create targeted social media ads.</td>
+                    <td><a href="mailto:ameenmujahid45@gmail.com" class="pay-button">+</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>For any inquiries, please feel free to reach out:</p>
+        <form action="mailto:ameenmujahid45@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ameen Mujahid. All rights reserved.</p>
+    </footer>
+</body>
+</html>
